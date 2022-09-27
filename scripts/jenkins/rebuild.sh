@@ -3,7 +3,7 @@ set -e
 source ~/.docker-host-ssh-credentials
 
 # Create a droplet
-DROPLET_NAME=docker-httrack
+DROPLET_NAME=docker-clone-site
 IP1=$(ssh "$DOCKERHOSTUSER"@"$DOCKERHOST" \
   "./digitalocean/scripts/new-droplet.sh $DROPLET_NAME")
 # https://github.com/dcycle/docker-digitalocean-php#public-vs-private-ip-addresses

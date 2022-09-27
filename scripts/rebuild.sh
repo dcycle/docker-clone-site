@@ -18,7 +18,7 @@ fi
 
 ./test.sh
 
-PROJECT=httrack
+PROJECT=clone-site
 DATE=`date '+%Y-%m-%d-%H-%M-%S-%Z'`
 MAJORVERSION='1'
 VERSION='1.0'
