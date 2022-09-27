@@ -1,0 +1,20 @@
+---
+version: '3'
+
+services:
+  website_one:
+    image: httpd:2.4-alpine
+    volumes:
+      - ./mock-websites/website-one:/usr/local/apache2/htdocs
+    ports:
+      - "80"
+  website_two:
+    image: httpd:2.4-alpine
+    volumes:
+      - ./mock-websites/website-two:/usr/local/apache2/htdocs
+    ports:
+      - "80"
+
+networks:
+  default:
+    name: dcycle_docker_httrack_selftest
