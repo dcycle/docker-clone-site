@@ -34,6 +34,11 @@ ls -lah "$BASE"/tests/websites/website_two/image/image.jpg
 ls -lah "$BASE"/tests/websites/website_one/page-2.html
 ls -lah "$BASE"/tests/websites/website_two/page-2.html
 
+echo "Search in all websites"
+grep -iR 'this string exists' "$BASE"/tests/websites
+grep -iR 'fbq(' "$BASE"/tests/websites
+! grep -iR 'this does not exist' "$BASE"/tests/websites
+
 echo "Remove the ./websites directory, ignore permission errors which can occur on CircleCI"
 rm -rf "$BASE"/tests/websites || true
 
