@@ -16,7 +16,7 @@ else
   source "$CREDENTIALS";
 fi
 
-./test.sh
+./tests/test.sh
 
 PROJECT=clone-site
 DATE=`date '+%Y-%m-%d-%H-%M-%S-%Z'`
