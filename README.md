@@ -18,9 +18,16 @@ For multiple websites:
         "https://$website"
     done
 
-Once that is done, let's say you want to search all websites for a specific string (say, "fbq(", if you )
-
-
 This will create, in a local directory called ./websites/blog.dcycle.com, a directory with the entire contents of blog.dcycle.com.
+
+Once that is done, let's say you want to search all websites for a specific string (say, "fbq(", if you want to check for the Facebook Pixel), you can run:
+
+    # Fail if fbq( is not present.
+    grep -iR 'fbq(' ./websites
+
+or
+
+    # Fail if fbq( is present.
+    ! grep -iR 'fbq(' ./websites
 
 See [this project on the Docker Hub](https://hub.docker.com/r/dcycle/clone-site/).
