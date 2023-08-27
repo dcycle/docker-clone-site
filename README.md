@@ -7,6 +7,13 @@ For example:
     docker run --rm -v "$(pwd)/websites":/websites dcycle/clone-site:1 \
       https://blog.dcycle.com/
 
+    # Only follow two levels of links
+    docker run --rm -v "$(pwd)/websites":/websites dcycle/clone-site:1 \
+      https://www.w3schools.com/w3css/tryw3css_templates_gourmet_catering.htm -r2
+
+    # Get help
+    docker run --rm -v "$(pwd)/websites":/websites dcycle/clone-site:1 --help
+
 For multiple websites:
 
     for website in \
