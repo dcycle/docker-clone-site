@@ -13,7 +13,7 @@ echo "Build the image"
 docker build -t local-dcycle-httrack-image .
 
 echo "Create local mock websites"
-cd "$BASE/tests" && docker-compose up -d --build
+cd "$BASE/tests" && docker compose up -d --build
 
 echo "Run the image"
 for website in \
@@ -26,7 +26,7 @@ for website in \
 done
 
 echo "Destroy the local mock websites"
-cd "$BASE/tests" && docker-compose down
+cd "$BASE/tests" && docker compose down
 
 echo "See if the sites were correctly cloned"
 ls -lah "$BASE"/tests/websites/website_one/image/image.jpg
