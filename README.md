@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/dcycle/docker-clone-site.svg?style=svg)](https://circleci.com/gh/dcycle/docker-clone-site)
+[![GitHub Actions](https://github.com/dcycle/docker-clone-site/actions/workflows/config.yml/badge.svg)](https://github.com/dcycle/docker-clone-site/actions/workflows/config.yml)
 
 Make a clone of any website using [httrack](https://www.httrack.com).
 
