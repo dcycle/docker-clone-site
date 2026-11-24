@@ -32,8 +32,4 @@ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no \
 scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no \
   -r * root@"$IP":docker-clone-site-job
 ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no \
-<<<<<<< HEAD
   root@"$IP" "cd docker-clone-site-job && ./scripts/install-docker-and-rebuild.sh"
-=======
-  root@"$IP" "cd docker-clone-site-job && ./scripts/install-docker-and-rebuild.sh"
->>>>>>> upstream/master
