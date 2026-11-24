@@ -1,4 +1,4 @@
-[![GitHub Actions](https://github.com/dcycle/docker-clone-site/actions/workflows/config.yml/badge.svg)](https://github.com/dcycle/docker-clone-site/actions/workflows/config.yml)
+[![GitHub Actions](https://github.com/dcycle/docker-clone-site/actions/workflows/config.yml/badge.svg)](../../actions/workflows/config.yml)
 
 Make a clone of any website using [httrack](https://www.httrack.com).
 
